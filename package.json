@@ -1,0 +1,26 @@
+{
+  "name": "gittracker",
+  "version": "0.0.1",
+  "description": "A command line tool to track your git activity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahowa/GitTracker.git"
+  },
+  "keywords": [
+    "git",
+    "stats",
+    "tracking",
+    "commits",
+    "prs"
+  ],
+  "author": "Matt Howa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahowa/GitTracker/issues"
+  },
+  "homepage": "https://github.com/mahowa/GitTracker#readme"
+}
