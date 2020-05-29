@@ -53,7 +53,7 @@ const getChanges = async () => {
             .replace("deletions(-)", "")
     );
   } catch (e) {
-    // Do something her
+    // Do something here
   }
 
   return {
