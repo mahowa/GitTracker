@@ -45,9 +45,10 @@ const getChanges = async () => {
   try {
     insertions = Number(
       stats
-        .filter(stat => stat.includes("insertions"))[0]
+        .filter(stat => stat.includes("insertion"))[0]
         .trim()
         .replace("insertions(+)", "")
+        .replace("insertion(+)", "")
     );
   } catch (e) {
     // Do something here
@@ -57,9 +58,10 @@ const getChanges = async () => {
   try {
     deletions = Number(
         stats
-            .filter(stat => stat.includes("deletions"))[0]
+            .filter(stat => stat.includes("deletion"))[0]
             .trim()
             .replace("deletions(-)", "")
+            .replace("deletion(-)", "")
     );
   } catch (e) {
     // Do something here
