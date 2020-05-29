@@ -1,5 +1,6 @@
 {
   "name": "gittracker",
+  "bin": "./index.js",
   "version": "0.0.1",
   "description": "A command line tool to track your git activity",
   "main": "index.js",
