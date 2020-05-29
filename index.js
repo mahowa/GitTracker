@@ -26,12 +26,18 @@ const getChanges = async () => {
     .trim()
     .split(",");
 
-  const files = Number(
-    stats
-      .filter(stat => stat.includes("files"))[0]
-      .trim()
-      .replace("files changed", "")
-  );
+  let files = 0;
+  try {
+    files = Number(
+        stats
+            .filter(stat => stat.includes("files"))[0]
+            .trim()
+            .replace("files changed", "")
+    );
+  }catch(e){
+    // do something
+  }
+
   let insertions = 0;
   try {
     insertions = Number(
